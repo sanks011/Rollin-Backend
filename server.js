@@ -1,9 +1,11 @@
+// Load environment variables first
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-require('dotenv').config();
 
 // Import Firebase config and initialization
 const { database } = require('./config/firebase.config');
