@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "products": {
+      ".indexOn": ["category"],
+      ".read": true,
+      ".write": true 
+    },
+    "users": {
+      ".read": true,  
+      ".write": true 
+    },
+    "carts": {
+      ".read": true,  
+      ".write": true  
+    },
+    "orders": {
+      ".indexOn": ["userId"],
+      ".read": true, 
+      ".write": true 
+    }
+  }
+}
